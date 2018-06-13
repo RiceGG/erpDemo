@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"/>
-<title>Insert title here</title>
+<meta charset="UTF-8" />
+<title>员工</title>
 </head>
 <body>
 	<table>
 		<tr>
-			<td>姓名</td><td>性别</td><td>部门编号</td>
+			<td>姓名</td>
+			<td>性别</td>
+			<td>部门编号</td>
+			<td>操作</td>
+		</tr>
+		<tr>
+			<td colspan="4"><a href="/toAdd" th:text="添加"></a></td>
 		</tr>
 		<tr th:each="emp : ${emps}">
-		<td th:text="${emp.ename}"></td>
-		<td th:text="${emp.esex}"></td>
-		<td th:text="${emp.dept_id}"></td>
-		<td>
-			<a th:href="@{'/selUp?id='+${emp.emp_id}}" th:text="修改"></a>
-			<a th:href="@{'/del?id='+${emp.emp_id}}" th:text="删除"></a>
-		</td>
-	</tr>
+			<td th:text="${emp.ename}"></td>
+			<td th:text="${emp.esex}"></td>
+			<td th:text="${emp.dept_id}"></td>
+			<td><a th:href="@{'/selUp?id='+${emp.emp_id}}" th:text="修改"></a>
+				<a th:href="@{'/del?id='+${emp.emp_id}}" th:text="删除"></a></td>
+		</tr>
 	</table>
 </body>
 </html>

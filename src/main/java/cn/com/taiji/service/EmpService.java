@@ -7,4 +7,5 @@ import cn.com.taiji.domain.Employee;
 
 public interface EmpService {
 	public List<Employee> emps();
+	public void delEmp(int id);
 }

@@ -10,5 +10,5 @@ import cn.com.taiji.domain.Employee;
 @Repository
 public interface EmpMapper {
 	public List<Employee> listEmp();
-	
+	public void delEmp(int id);
 }

@@ -18,5 +18,9 @@ public class EmpServiceImpl implements EmpService{
 		List<Employee> emps = em.listEmp();
 		return emps;
 	}
+	@Override
+	public void delEmp(int id) {
+		em.delEmp(id);
+	}
 
 }
