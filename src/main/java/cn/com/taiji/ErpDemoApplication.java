@@ -1,3 +1,4 @@
+
 package cn.com.taiji;
 
 import org.mybatis.spring.annotation.MapperScan;
@@ -16,3 +17,4 @@ public class ErpDemoApplication {
 		SpringApplication.run(ErpDemoApplication.class, args);
 	}
 }
+
