@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.taiji.dao.EmpMapper">
+	<resultMap type="cn.com.taiji.domain.Employee" id="empResult">
+        <result property="emp_id" column="emp_id"/>
+        <result property="ename" column="ename"/>
+        <result property="esex" column="esex"/>
+        <result property="dept_id" column="dept_id"/>
+        
+    </resultMap>
+    <select id="listEmp" resultMap="empResult">
+		select * from employee
+	</select>
+	</mapper>

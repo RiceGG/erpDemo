@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication  
-@EnableTransactionManagement  
-@ComponentScan("cn.com.taiji")  
+@EnableTransactionManagement 
+@ComponentScan("cn.com.taiji")
 @MapperScan("cn.com.taiji.dao")
 public class ErpDemoApplication {
 

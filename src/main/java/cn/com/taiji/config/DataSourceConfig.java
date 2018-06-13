@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DataSourceConfig {
 	 @Value("${spring.datasource.driverClassName}")
-	  private String driver ;
+	  private String driver;
 
 	  @Value("${spring.datasource.url}")
 	  private String url ;

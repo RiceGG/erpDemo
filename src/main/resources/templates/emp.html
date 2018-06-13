@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>姓名</td><td>性别</td><td>部门编号</td>
+		</tr>
+		<tr th:each="emp : ${emps}">
+		<td th:text="${emp.ename}"></td>
+		<td th:text="${emp.esex}"></td>
+		<td th:text="${emp.dept_id}"></td>
+		<td>
+			<a th:href="@{'/selUp?id='+${emp.emp_id}}" th:text="修改"></a>
+			<a th:href="@{'/del?id='+${emp.emp_id}}" th:text="删除"></a>
+		</td>
+	</tr>
+	</table>
+</body>
+</html>
