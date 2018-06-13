@@ -9,8 +9,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @SpringBootApplication  
 @EnableTransactionManagement  
-@ComponentScan("com.example.Controller")  
-@MapperScan("com.example.Dao")
+@ComponentScan("cn.com.taiji")  
+@MapperScan("cn.com.taiji.dao")
 public class ErpDemoApplication {
 
 	public static void main(String[] args) {
