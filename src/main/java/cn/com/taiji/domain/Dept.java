@@ -1,18 +1,40 @@
 package cn.com.taiji.domain;
 
+import java.util.List;
+
 public class Dept {
 	private Integer dept_id;
 	private String dname;
 	private Integer parent_id;
 	
+	private List<Employee> emps;
+	
 	public Dept() {}
 
+	public List<Employee> getEmps() {
+		return emps;
+	}
+
+	public void setEmps(List<Employee> emps) {
+		this.emps = emps;
+	}
+
+
+
 	public Dept(Integer dept_id, String dname, Integer parent_id) {
-		super();
 		this.dept_id = dept_id;
 		this.dname = dname;
 		this.parent_id = parent_id;
 	}
+
+	public Dept(Integer dept_id, String dname, Integer parent_id, List<Employee> emps) {
+		this.dept_id = dept_id;
+		this.dname = dname;
+		this.parent_id = parent_id;
+		this.emps = emps;
+	}
+
+
 
 	public Integer getDept_id() {
 		return dept_id;
@@ -38,9 +60,6 @@ public class Dept {
 		this.parent_id = parent_id;
 	}
 
-	@Override
-	public String toString() {
-		return "Dept [dept_id=" + dept_id + ", dname=" + dname + ", parent_id=" + parent_id + "]";
-	}
+	
 	
 }
